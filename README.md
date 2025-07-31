@@ -21,7 +21,7 @@ Um gerador de QR Code moderno, responsivo e fácil de usar, feito com HTML, CSS 
 
 ## Como usar
 
-0. Acesse o link do github pages: [https://](https://brunomartinsgamedev.github.io/geradorQrCode)
+0. Acesse o link do github pages: [Gerador de QRCode](https://brunomartinsgamedev.github.io/geradorQrCode)
 1. Baixe ou clone este repositório
 2. Abra o arquivo `index.html` em qualquer navegador moderno
 3. Escolha o tipo de conteúdo, preencha os campos e clique em "Gerar QRCODE"
