@@ -18,6 +18,7 @@ Um gerador de QR Code moderno, responsivo e fácil de usar, feito com HTML, CSS 
   - VCard/Contato (adiciona contato à agenda)
 - Formulário dinâmico: os campos mudam conforme o tipo de conteúdo escolhido
 - QR Code gerado instantaneamente ao clicar no botão
+- Possibilidade de baixar o QR Code como imagem PNG
 
 ## Como usar
 
@@ -25,7 +26,8 @@ Um gerador de QR Code moderno, responsivo e fácil de usar, feito com HTML, CSS 
 1. Baixe ou clone este repositório
 2. Abra o arquivo `index.html` em qualquer navegador moderno
 3. Escolha o tipo de conteúdo, preencha os campos e clique em "Gerar QRCODE"
-4. O QR Code aparecerá à direita do formulário
+4. O QR Code aparecerá à direita do formulário, junto com o botão "Baixar QR Code"
+5. Clique em "Baixar QR Code" para salvar a imagem PNG do código gerado
 
 ## Tecnologias
 
