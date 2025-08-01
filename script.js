@@ -1,3 +1,23 @@
+// Função para baixar o QR Code como imagem PNG
+function baixarQRCode() {
+    const qrcodeDiv = document.getElementById('qrcode');
+    const canvas = qrcodeDiv.querySelector('canvas');
+    if (!canvas) {
+        alert('Gere um QR Code primeiro!');
+        return;
+    }
+    const url = canvas.toDataURL('image/png');
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'qrcode.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+// Esconde a área do QR Code ao iniciar
+document.getElementById('qrcode-area').style.display = 'none';
+document.getElementById('baixar-btn').addEventListener('click', baixarQRCode);
 // Gerador de QR Code - script.js
 // Utiliza a biblioteca QRCode.js via CDN (index.html)
 
@@ -140,6 +160,8 @@ async function gerarQRCode() {
     }
     // Limpa QRCode anterior
     document.getElementById('qrcode').innerHTML = '';
+    // Exibe a área do QR Code
+    document.getElementById('qrcode-area').style.display = 'flex';
     // Gera novo QRCode
     new QRCode(document.getElementById('qrcode'), {
         text: conteudo,
